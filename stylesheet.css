@@ -1,0 +1,66 @@
+.boxhover::after{
+    content: "";
+    background-image: url("./images/wave-blue.3362585e.svg");
+    position: absolute;
+    background-position: center;
+    height: 3.5rem;
+    width: 5rem;
+    bottom: 1rem;
+    right: 0.4rem;
+    opacity:0;
+    transform: scale(0);
+    transition: all 0.2s ease;
+    z-index: -1;
+}
+.boxhover:hover::after{
+    opacity: 1;
+    z-index: 1000;
+    transform: scale(1.03);
+    transition: all 0.2s ease;
+}
+.demohover::after{
+    content: "";
+    background-image: url("./images/wave-purple.4b580cd7.svg");
+    position: absolute;
+    background-position: center;
+    height: 5rem;
+    width: 6rem;
+    right: 0.4rem;
+    bottom: 1rem;
+    opacity: 0;
+    transform: scale(0);
+    opacity: 0;
+    transition: all 0.2s ease;
+    z-index: -1;
+}
+.demohover::before{
+    content: "";
+    border: #818557;
+}
+.demohover:hover::after{
+    opacity: 1;
+    z-index: 10000;
+    transform: scale(1.03);
+    box-shadow: 0 0 4px #181c2e;
+    transition: all 0.2s ease;
+    border: none;
+}
+.corefeatureSection{
+    background-size: 100% 100%;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+}
+.companiesList{
+    animation: 10s infinite linear moveCompany;
+}
+@keyframes moveCompany {
+    0%{
+        top: 0;
+    }
+    100%{
+        top: -50%;
+    }
+}
+.ctaSection{
+    background-size: 100% 100%;
+}
