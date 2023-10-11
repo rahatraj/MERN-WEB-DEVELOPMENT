@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mudal App | Rahat Reza</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+
+    <!-- wrapper -->
+    <div class="wrapper">
+        <!-- main content -->
+        <div class="card-wrapper">
+            <div>
+                <img src="./assets/Rahat photograph.jpg" alt="">
+            </div>
+            <div class="user-name">
+                <h2>Rahat Reza</h2>
+            </div>
+            <div class="designation">
+                <h3>Founder, Tech with Rahat</h3>
+            </div>
+            <div class="button-group">
+                <button onclick="openModal()" class="btn-share btn-card">
+                    <i class="fa-solid fa-share"></i>
+                    <div>Share my Profile</div>
+                </button>
+                <button class="btn-card btn-follow">follow me</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal content -->
+    <div class="modal">
+        <div class="modal-header">
+            <h1>Share My Profile</h1>
+            <div>
+                <i onclick="closeModal" class="fa-solid fa-xmark close"></i>
+            </div>
+        </div>
+
+        <div>
+            <h3>Share this via</h3>
+
+            <div class="icon-container">
+                <a href="#" class="icon" id="facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="#" class="icon" id="twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#" class="icon" id="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" class="icon" id="whatsapp">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" class="icon" id="telegram">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/2454ae6482.js" crossorigin="anonymous"></script>
+</body>
+</html>
