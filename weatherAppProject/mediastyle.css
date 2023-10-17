@@ -1,0 +1,33 @@
+@media  screen and (max-width:450px) {
+    .parameter p:first-of-type{
+        font-size: 0.65rem;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    
+}
+@media screen and (max-width:350px) {
+    .wrapper{
+        height: 100%;
+    }
+    .tab-container{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    .parameter-container{
+        display: flex;
+        flex-direction: column;
+        /* padding-bottom: 200px; */
+        overflow-y: hidden;
+    }
+    .parameter{
+        width: 40%;
+        max-width: 300px;
+    }
+    .form-container{
+        padding-bottom: 300px;
+    }
+}
