@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <button id="light-dark"><img src="./images/light-mode.png" alt=""></button>
+        <h2>Contact Application Form</h2>
+        <form action="/register" method="POST" onsubmit="handleSubmit(event)">
+        <div class="content">
+            <label for="name">Name : 
+                <input type="text" class="inputFeild" name="name" id="name" required placeholder="Type your name">
+            </label>
+
+            <label for="email">Email : 
+                <input type="email" class="inputFeild" name="emali" id="email" required placeholder="type your email">
+            </label>
+
+            <label for="mobile">Mobile No : 
+                <input type="tel" class="inputFeild" name="mobile" id="mobile" placeholder="type your mobile no" pattern="[6-9]{1}[0-9]{9}" >
+            </label>
+
+            <label for="message"> Message : 
+                <textarea name="message" class="inputFeild" id="message" placeholder="Say something" rows="3" cols="8"></textarea>
+            </label>
+
+            <input type="submit" value="submit" id="submit">
+        </div>
+    </form>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
